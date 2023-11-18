@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="weather-side">
+            <div class="weather-gradient">
+                <div class="date-container">
+                    <h2 class="date-dayname">
+                    </h2>
+                    <span class="date-day">
+                    </span>
+                    <i class="location-icon" data-feather="map-pin"></i>
+                    <span id="loc" class="location">
+                    </span>
+                </div>
+                <div class="weather-container">
+                        <i id="weather-icon"></i>
+                        <h1 class="weather-temp">
+                        </h1>
+                        <h3 class="weather-desc">
+                        </h3>
+                </div>
+        </div>
+        </div>
+        <div class="info-side">
+            <div class="today-info-container">
+                <div class="today-info">
+                    <div class="precipitation">
+                        <span class="title">
+                            PRECEPITATION
+                        </span>
+                        <span id="precipitation-value" class="value">
+                        </span>
+                        <div class="clear">
+    
+                        </div>
+                    </div>
+
+                    <div class="precipitation">
+                        <span class="title">
+                            WIND
+                        </span>
+                        <span id="wind-value" class="value">
+                        </span>
+                        <div class="clear">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="week-container">
+                <ul class="week-list">
+                    <li id="day0container" class="active">
+                        <i class="day-icon" id="day-0-icon">
+                        </i>
+                        <span id="day-0" class="day-name">
+                        </span>
+                        <span id="temp-0" class="day-temp">
+                        </span>
+                    </li>
+                    <li id="day1container">
+                        <i class="day-icon" id="day-1-icon">
+                        </i>
+                        <span id="day-1" class="day-name">
+                        </span>
+                        <span id="temp-1" class="day-temp">
+                        </span>
+                    </li>
+                    <li id="day2container">
+                        <i class="day-icon" id="day-2-icon">
+                        </i>
+                        <span id="day-2" class="day-name">
+                        </span>
+                        <span id="temp-2" class="day-temp">
+                        </span>
+                    </li>
+                    <li id="day3container">
+                        <i class="day-icon" id="day-3-icon">
+                        </i>
+                        <span id="day-3" class="day-name">
+                        </span>
+                        <span id="temp-3" class="day-temp">
+                        </span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <form action="">
+                <input id="search" type="search" required>
+                <i onclick="search()" class="fa fa-search"></i>
+              </form>
+            
+        </div>
+        </div>
+        <div class="first-search-container">
+            <h1>Weather App</h1>
+            <form class="first-search" action="">
+                <input id="firstsearch" type="search" required>
+                <i onclick="firstsearch()" class="fa fa-search"></i>
+              </form>
+              <span class="place-holder">Enter a city</span>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
